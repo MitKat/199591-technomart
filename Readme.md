@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Katerina Miteneva](https://up.htmlacademy.ru/htmlcss/17/user/199591).
-* Наставник: `Неизвестно`.
+* Наставник: `not`.
 
 ---
 
