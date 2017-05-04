@@ -10,31 +10,37 @@
 		<header  class="main-header">
 			<div class="top-header-wrap">
 				<div class="top-header container">
-					<a class="logo">Техномарт</a>
+					<a class="logo"><img src="img/logo.png" alt="Техномарт" width="220" height="47"></a>
 					<form class="search">
-						<input type="text" name="search" placeholder="Поиск:">
-						<input type="submit" name="">
+						<input type="search" name="search" placeholder="Поиск:">
+						<input type="submit" value="Отправить">
 					</form>
 					<ul class="manager-order">
-						<li><a class="bookmark" href="#">Закладки</a></li>
-						<li><a href="#" class="cart-full">Корзина: 10</a></li>
-						<li><a class="to-order" href="#">Оформить заказ</a></li>
+						<li  class="bookmark">
+							<a href="#">Закладки:</a>
+							<span class="total">0</span>
+						</li>
+						<li class="cart">
+							<a  href="#">Корзина:</a>
+							<span class="total">0</span>
+						</li>
+						<li  class="to-order">
+							<a href="#">Оформить заказ</a>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="middle-header">
-				<div class="container">
+			<div class="middle-header container">
 					<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 					<div class="contacts">
 						<span class="phone">+7 (812) 555-05-55</span>
 						<span class="address">г.Санкт-Петербург,ул. Б.Конюшенная, д.19/8</span>
 					</div>
-					<div class="user-on">
-						<a href="#" class="logout">Равшан Джамшутович</a>
-						<a href="#">Мои заказы</a>
-						<a href="#">Личный кабинет</a>
+					<div class="user-block user-off">
+						<a href="#" class="sign-in">Войти</a>
+						<a href="#" class="sign-up">Регистрация</a>
 					</div>
-					<nav class="main-nav">
+					<nav class="main-navigation">
 						<ul>
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">Компания</a></li>
@@ -45,7 +51,7 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
-				</div>
+				
 			</div>
 		</header>
 		<main>
