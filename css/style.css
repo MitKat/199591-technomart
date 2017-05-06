@@ -1,8 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-/*	min-width: 960px;*/
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', "Arial", sans-serif;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -13,6 +12,20 @@ body {
 	padding: 0 10px;
 	width: 940px;
 	background-color: #888;
+}
+
+.btn {
+	display: block;
+	box-sizing: border-box;
+	padding: 11px 15px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #ee3643;
+	border-radius: 5px;
 }
 
 .main-header {
@@ -28,7 +41,7 @@ body {
 	display: flex;
 	display: -ms-flexbox;
 	-ms-flex-align: baseline;
-	    align-items: baseline;
+	align-items: baseline;
 	margin-top: 0;
 	margin-bottom: 45px;
 	min-height: 42px;
@@ -280,10 +293,198 @@ body {
 	border-bottom: 5px solid #293449;
 }
 
+.popular .popular-header {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 25px 30px;
+	padding-right: 25px;
+	
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+}
+
+.popular-header .btn {
+	margin-left: auto;
+	width: 253px;
+}
+
+.popular .catalog-popular {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.popular .product-item {
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	vertical-align: top;
+	width: 218px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+}
+
+.popular .product-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.product-item .flag-new {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	
+	width: 60px;
+	height: 60px;
+	text-indent: -1000px;
+	overflow: hidden;
+	z-index: 20;
+	background-image: url(../img/new-flag.png);
+	background-repeat: no-repeat;
+}
+
+.product-item .actions {
+	display: none;
+}
+
+.product-item .btn-buy,
+.product-item .btn-bookmark {
+	display: block;
+/*	box-sizing: border-box;*/
+	margin: 8px auto;
+	width: 138px;
+	height: 38px;
+	background-color: #63a63e;
+/*	border: 3px solid #fff;*/
+}
+
+.product-item .btn-buy {
+	padding-left: 40px;
+	padding-right: 40px;
+	background-image: url(../img/spritesheet.png);
+	background-repeat: no-repeat;
+	background-position: -10px -533px;
+/*	border-bottom-color: #367315;*/
+	box-shadow: inset 0 -3px #367315;
+}
+
+.product-item .btn-buy:hover {
+	background-color: #5fbb2d;
+	background-position: -10px -645px;
+/*	border: 3px solid #5fbb2d;*/
+}
+
+.product-item .btn-buy:active {
+	background-color: #518534;
+	background-position: -10px -589px;
+	box-shadow: none;
+}
+
+.product-item .btn-bookmark {
+	color: #32425c;
+	background-color: #fff;
+	border: 3px solid #63a63e;
+}
+
+.product-item img {
+	margin-bottom: 20px;
+	width: 218px;
+	height: 160px;
+}
+
+.product-item h2 {
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.product-item .old-price,
+.product-item .price {
+	display: block;
+	height: 20px;
+	font-size: 17px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.product-item .old-price {
+	color: #999;
+	text-decoration: line-through;
+}
+
+.product-item .price {
+	position: relative;
+	margin: 10px auto;
+	margin-bottom: 20px;
+	padding: 10px 35px;
+	width: 80px;  
+	color: #fff;
+	background-color: #ee3643;
+}
+
+.product-item .price::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	width: 0;
+	height: 0;
+	border: 20px solid #fff;
+	border-left-color: transparent;
+}
+
+.product-item:hover {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.product-item:hover .actions {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 160px;
+	padding-top: 43px;
+	background-color: #fff;
+	z-index: 5;
+}
 
 
+.popular .brand-item {
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 218px;
+	height: 143px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+}
 
+.popular .brand-item:nth-child(4n) {
+	margin-right: 0;
+}
 
+.brand-item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.brand-item img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	    transform: translateX(-50%) translateY(-50%);
+}
 
 
 
