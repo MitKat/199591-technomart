@@ -58,28 +58,45 @@
 		<main>
 			<div class="container">
 				<div class="promo-block">
-					<div class="promo-item">
+					<div class="promo-item promo-material">
 						<span class="name-item">Материалы</span>
-						<a href="#">На любой вкус</a>
+						<a class="btn" href="#">На любой вкус</a>
 					</div>
-					<div class="promo-item">
+					<div class="promo-item promo-tool">
 						<span class="name-item">Инструмент</span>
-						<a href="#">На все случаи</a>
+						<a class="btn" href="#">На все случаи</a>
 					</div>
-					<div class="promo-item">
+					<div class="promo-item promo-tehn">
 						<span class="name-item">Техника</span>
-						<a href="#">Для стройки</a>
+						<a class="btn" href="#">Для стройки</a>
 					</div>
-					<div class="promo-item">
+					<div class="promo-item promo-discount">
 						<span class="name-item">Скидки 50%</span>
-						<a href="#">На 350 товаров</a>
+						<a class="btn" href="#">На 350 товаров</a>
 					</div>
-					<div class="promo-item">
+					<div class="promo-item promo-delivery">
 						<span class="name-item">Доставка</span>
-						<a href="#">Бесплатно</a>
+						<a class="btn" href="#">Бесплатно</a>
 					</div>
 					<div class="promo-slider">
-						<img src="img/slide-1.jpg">
+						<input type="radio" name="toggle" id="btn1" checked>
+						<input type="radio" name="toggle" id="btn2">
+						<div class="slider-toggle">
+							<label for="btn1"></label>
+							<label for="btn2"></label>
+						</div>
+						<div class="promo-slides">
+							<div class="slide slide1">
+								<span class="title-slide">Перфораторы</span>
+								<p>Настоящие мужские игрушки</p>
+								<a class="btn" href="#">Открыть каталог</a>
+							</div>
+							<div class="slide slide2">
+								<span class="title-slide">Дрели</span>
+								<p>Соседям на радость!</p>
+								<a class="btn" href="#">Открыть каталог</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="popular">
@@ -186,30 +203,43 @@
 					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					<div class="slider">
-						<ul>
-							<li>Доставка</li>
-							<li>Гарантия</li>
-							<li>Кредит</li>
-						</ul>
-						<div class="delivery-slide slide1">
-							<span class="title-slide">Доставка</span>
-							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+							<input type="radio" id="delivery-slide" name="toggle2" checked>
+							<input type="radio" id="guarantee-slide" name="toggle2">
+							<input type="radio" id="credit-slide" name="toggle2">
+						<div class="slider-controls">
+							<label for="delivery-slide">Доставка</label>
+							<label for="guarantee-slide">Гарантия</label>
+							<label for="credit-slide">Кредит</label>
 						</div>
-						<div class="guarantee-slide slide2">
-							<span class="title-slide">Гарантия</span>
-							<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-							<p>Дом уж восстановите как-нибудь сами.</p>
-						</div>
-						<div class="credit-slide slide3">
-							<span class="title-slide">Кредит</span>
-							<p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-							<a href="#">Отправить заявку</a>
+						<div class="slides">
+							<div class="delivery-slide slide-item">
+								<div class="text-slide">
+									<span class="title-slide">Доставка</span>
+									<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p> 
+									<p>Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+								</div>
+							</div>
+							<div class="guarantee-slide slide-item">
+								<div class="text-slide">
+									<span class="title-slide">Гарантия</span>
+									<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+									<p>Дом уж восстановите как-нибудь сами.</p>
+								</div>
+							</div>
+							<div class="credit-slide slide-item">
+								<div class="text-slide">
+									<span class="title-slide">Кредит</span>
+									<p>Залезть в долговую яму стало проще!</p>
+									<p>Кредитные консультанты придут вам на помощь.</p>
+									<a class="btn" href="#">Отправить заявку</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="information container">
-				<article class="about-us">
+				<div class="column-left">
 					<h2>Компания "Техномарт"</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -218,20 +248,20 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="#">Подробнее о компании</a>
-				</article>
-				<div class="map">
+					<a class="btn" href="#">Подробнее о компании</a>
+				</div>
+				<div class="column-right">
 					<h2>Контакты</h2>
-					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<img src="#">
-					<a href="#">Заблудились? Напишите нам!</a>
+					<p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
+					<img src="img/map-mini.jpg" alt="map" width="300" height="158">
+					<a class="btn" href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="top-footer container">
-				<a class="logo">Техномарт</a>
-				<nav class="footer-nav">
+				<a class="logo"><img src="img/logo.png" alt="Техномарт" width="220" height="47"></a>
+				<nav class="footer-navigation">
 					<ul>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
@@ -242,7 +272,7 @@
 				</nav>
 				<span class="footer-contact">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
 					+7 (812) 555-05-55</span>
-				<ul class="promo-nav">
+				<ul class="promo-navigation">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструмент</a></li>
@@ -251,15 +281,13 @@
 			</div>
 			<div class="bottom-footer-wrap">
 				<div class="bottom-footer container">
-					<span>2010-2017 Компания "Техномарт" Все права защищены</span>
+					<span class="copyright-left">&#169; 2010-2017 Компания &#171;Техномарт&#187; <br> Все права защищены</span>
 					<div class="social">
-						<ul>
-							<li><a href="#">Вконтакте</a></li>
-							<li><a href="#">Фейсбук</a></li>
-							<li><a href="#">Инстаграм</a></li>
-						</ul>
+						<a class="social-vk" href="#">Вконтакте</a>
+						<a class="social-facebook" href="#">Фейсбук</a>
+						<a class="social-instagram" href="#">Инстаграм</a>
 					</div>
-					<div class="copyright">
+					<div class="copyright-right">
 						<ul>
 							<li>
 								Обратная связь:
