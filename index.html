@@ -59,6 +59,7 @@
 			<div class="container">
 				<div class="promo-block">
 					<div class="promo-item promo-material">
+						<div class="flag-new">Новинка</div>
 						<span class="name-item">Материалы</span>
 						<a class="btn" href="#">На любой вкус</a>
 					</div>
@@ -113,7 +114,17 @@
 							</div>
 							<img src="img/Bosch-BFG-9000.jpg" alt="BFG-9000" width="218" height="160px">
 							<h2>Перфоратор BOSCH BFG 9000</h2>
-							<span class="old-price">25500 p.</span>
+							<span class="old-price">32500 p.</span>
+							<span class="price">25500 p.</span>
+						</article>
+						<article class="product-item">
+							<div class="actions">
+								<a class="btn btn-buy" href="#">Купить</a>
+								<a class="btn btn-bookmark" href="#">В закладки</a>
+							</div>
+							<img src="img/Bosch-BFG-3000.jpg" alt="BFG-6000" width="218" height="160">
+							<h2>Перфоратор BOSCH BFG 3000</h2>
+							<span class="old-price">22500 p.</span>
 							<span class="price">15500 p.</span>
 						</article>
 						<article class="product-item">
@@ -121,20 +132,10 @@
 								<a class="btn btn-buy" href="#">Купить</a>
 								<a class="btn btn-bookmark" href="#">В закладки</a>
 							</div>
-							<img src="img/Bosch-BFG-6000.jpg" alt="BFG-6000" width="218" height="160">
-							<h2>Перфоратор BOSCH BFG 9000</h2>
-							<span class="old-price">25500 p.</span>
-							<span class="price">15500 p.</span>
-						</article>
-						<article class="product-item">
-							<div class="actions">
-								<a class="btn btn-buy" href="#">Купить</a>
-								<a class="btn btn-bookmark" href="#">В закладки</a>
-							</div>
-							<img src="img/Bosch-BFG-3000.jpg" width="218" height="160">
-							<h2>Перфоратор BOSCH BFG 9000</h2>
-							<span class="old-price">25500 p.</span>
-							<span class="price">15500 p.</span>
+							<img src="img/Bosch-BFG-6000.jpg" width="218" height="160">
+							<h2>Перфоратор BOSCH BFG 6000</h2>
+							<span class="old-price">30500 p.</span>
+							<span class="price">25500 p.</span>
 						</article>
 						<article class="product-item">
 							<div class="actions">
@@ -142,9 +143,9 @@
 								<a class="btn btn-bookmark" href="#">В закладки</a>
 							</div>
 							<img src="img/Bosch-BFG-2000.jpg" width="218" height="160">
-							<h2>Перфоратор BOSCH BFG 9000</h2>
+							<h2>Перфоратор BOSCH BFG 2000</h2>
 							<span class="old-price"></span>
-							<span class="price">15500 p.</span>
+							<span class="price">12500 p.</span>
 						</article>
 					</div>
 				</div>
@@ -254,13 +255,13 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
 					<img src="img/map-mini.jpg" alt="map" width="300" height="158">
-					<a class="btn" href="#">Заблудились? Напишите нам!</a>
+					<a class="btn" href="writeus.html">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="top-footer container">
-				<a class="logo"><img src="img/logo.png" alt="Техномарт" width="220" height="47"></a>
+				<span class="logo">Техномарт</span>
 				<nav class="footer-navigation">
 					<ul>
 						<li><a href="#">Компания</a></li>
@@ -295,13 +296,47 @@
 							</li>
 							<li>
 								Разработано:
-								<a href="#">htmlacademy.ru</a>
+								<a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<div class="modal-content modal-cart">
+			<button type="button" class="modal-close">Закрыть</button>
+			<b>Товар добавлен в корзину!</b>
+			<div class="btn-wrap">
+				<a class="btn" href="#">Оформить заказ</a>
+				<button type="button" class="btn btn-close">
+					Продолжить покупки</button>
+			</div>
+		</div>
+		<div class="modal-content modal-form">
+			<button type="button" class="modal-close">Закрыть</button>
+			<form method="post" action="#">
+				<div class="content-wrap">
+					<div class="column">
+						<label for="name">Ваше имя:</label>
+						<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="column">
+						<label for="e-mail">Ваш e-mail:</label>
+						<input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+					</div>
+					<label for="message">Текст письма:</label>
+					<textarea id="message" name="message" placeholder="В свободной форме">В свободной форме
+					</textarea>
+				</div>
+				<div class="btn-wrap">
+					<button class="btn" type="submit"> Отправить</button>
+				</div>
+			</form>
+		</div>
+		<div class="modal-map">
+			<button type="button" class="modal-close">Закрыть</button>
+		</div>
+		
   </body>
 </html>
 
