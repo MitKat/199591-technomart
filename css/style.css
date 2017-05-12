@@ -13,13 +13,6 @@ body {
 	width: 940px;
 }
 
-.clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
-}
-
 .btn {
 	display: block;
 	box-sizing: border-box;
@@ -241,7 +234,7 @@ body {
 
 .middle-header .contacts {
 	width: 275px;
-	margin-left: 20px;
+	margin-left: auto;
 	margin-right: auto;
 }
 
@@ -249,6 +242,7 @@ body {
 	box-sizing: border-box;
 	display: block;
 	padding: 7px 50px;
+	padding-right: 20px;
 	text-align: center;
 	color: #ee3643;
 	font-size: 21px;
@@ -270,7 +264,6 @@ body {
 
 .middle-header .user-block {
 	position: relative;
-	width: 300px;
 }
 
 .user-off a {
@@ -603,8 +596,9 @@ body {
 	background-position: right 10px;
 }
 
-
 .promo-item .btn {
+	padding-left: 0;
+	padding-right: 0;
 	margin-top: 12px;
 	width: 137px;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -773,7 +767,7 @@ body {
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 160px;
+	height: 100px;
 	padding-top: 43px;
 	background-color: #fff;
 	z-index: 5;
@@ -1008,6 +1002,15 @@ body {
 	top: 7px;
 	left: 0;
 	background-color: #fb565a;
+}
+
+.column-right .map {
+	display: block;
+	width: 300px;
+	height: 160px;
+	background-color: #eee;
+	background-image: url(../img/map-mini.jpg);
+	background-repeat: no-repeat;
 }
 
 .column-right .btn {
@@ -1351,7 +1354,7 @@ h1.page-inner {
 
 .price-filter input[type="text"] {
 	margin-bottom: 25px;
-	width: 95px;
+	width: 91px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 17px;
@@ -1367,6 +1370,7 @@ h1.page-inner {
 	margin: 0 5px;
 	width: 10px;
 	height: 18px;
+	font-size: 0;
 	vertical-align: top;
 	border-bottom: 1px solid #444;
 }
@@ -1648,10 +1652,10 @@ input[type="radio"]:disabled+span::before {
 
 .modal-close {
 	position: absolute;
-	top: 10px;
+	top: 7px;
 	right: 10px;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	font-size: 0;
 	background-color: transparent;
 	border: none;
@@ -1661,7 +1665,7 @@ input[type="radio"]:disabled+span::before {
 .modal-close::after {
 	content: "";
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	right: 0px;
 	width: 20px;
 	height: 4px;
@@ -1695,13 +1699,13 @@ input[type="radio"]:disabled+span::before {
 	background-color: #f1f1f1;
 }
 
-.modal-content .btn {
+.btn-wrap .btn {
 	display: inline-block;
 	vertical-align: bottom;
 	width: 220px;
 }
 
-.modal-cart .btn-close {
+.btn-wrap .btn-close {
 	margin-left: 15px;
 	font-family: inherit;
 	color: #000;
@@ -1737,6 +1741,7 @@ input[type="radio"]:disabled+span::before {
 	padding-left: 15px;
 	box-sizing: border-box;
 	width: 220px;
+	height: 30px;
 	font: inherit;
 	border: 2px solid #d7dcde;
 	border-radius: 5px;
@@ -1762,6 +1767,11 @@ input[type="radio"]:disabled+span::before {
 	color: #999999;
 }
 
+.modal-form .btn {
+	width: 100%;
+	border: none;
+}
+
 .modal-map {
 	display: none;
 	position: fixed;
@@ -1771,11 +1781,15 @@ input[type="radio"]:disabled+span::before {
 	margin-left: -470px;
 	width: 940px;
 	height: 436px;
+	background-color: #eee;
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
+.modal-content-show {
+	display: block;
+}
 
 
 
