@@ -8,18 +8,18 @@ for (var i = 0; i < link2.length ; i++) {
 	link2[i].addEventListener("click", function(event) {
   	event.preventDefault();
 		popupcart.classList.add("modal-content-show");
-   });
+  });
 }
 			
 closecart.addEventListener("click", function(event) {
    event.preventDefault();
    popupcart.classList.remove("modal-content-show");
- });
+});
 			
 closecart2.addEventListener("click", function(event) {
    event.preventDefault();
    popupcart.classList.remove("modal-content-show");
- });
+});
 
 var link = document.querySelector(".btn-open-modal");
 var popupform = document.querySelector(".modal-form");
@@ -27,12 +27,12 @@ var closeform = popupform.querySelector(".modal-close");
 		
 link.addEventListener("click", function(event) {
  	event.preventDefault();
-	popupform.classList.add("modal-content-show");
+	popupform.classList.add("modal-form-show");
 });
 			
 closeform.addEventListener("click", function(event) {
   event.preventDefault();
-  popupform.classList.remove("modal-content-show");
+  popupform.classList.remove("modal-form-show");
 });
 
 var mapOpen = document.querySelector(".map");
