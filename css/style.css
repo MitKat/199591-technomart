@@ -59,8 +59,8 @@ body {
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
-	align-items: baseline;
 	-ms-flex-align: baseline;
+	align-items: baseline;
 	margin-top: 0;
 	margin-bottom: 45px;
 	min-height: 42px;
@@ -240,8 +240,8 @@ body {
 .middle-header {
 	display: flex;
 	display: -ms-flexbox;
-	flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	margin-top: 0;
 }
