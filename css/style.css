@@ -74,9 +74,6 @@ body {
 	width: 220px;
 	height: 47px;
 	box-sizing: border-box;
-}
-
-.top-header .logo-page {
 	padding: 10px 10px;
 	font-size: 24px;
 	line-height: 24px;
@@ -704,7 +701,6 @@ body {
 .product-item .btn-bookmark {
 	margin: 8px auto;
 	width: 138px;
-/*	min-height: 32px;*/
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: normal;
 	background-color: #63a63e;
@@ -1085,11 +1081,21 @@ body {
 	padding: 16px 10px;
 	width: 200px;
 	text-align: center;
+	color: #fff;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
+	text-decoration: none;
 	background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
+}
+
+.top-footer .logo:hover {
+	background-color: #ca2c37;
+}
+
+.top-footer .logo:active {
+	background-color: #ba2732;
 }
 
 .top-footer .footer-navigation {
@@ -1679,7 +1685,7 @@ body {
 
 .product-description .title-description {
 	padding-bottom: 5px;
-	font-family: 'Cuprum', "Arial", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: auto;
 	text-transform: uppercase;
