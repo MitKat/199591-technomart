@@ -470,8 +470,8 @@ body {
 }
 
 .promo-slider {
-	order: 1;
 	-ms-flex-order: 1;
+	order: 1;
 	position: relative;
 	left: 0;
 }
